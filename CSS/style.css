@@ -163,5 +163,8 @@ footer {
       width: 100%; }
       #gdjesmo .info h2 {
         width: 100%; } }
+.btn:focus {
+  outline: none;
+  box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */
