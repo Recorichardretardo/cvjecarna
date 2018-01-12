@@ -148,5 +148,20 @@ footer {
 
   .info {
     margin-top: 25px; } }
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 150px;
+    text-align: center; }
+
+  #gdjesmo {
+    flex-wrap: wrap; }
+    #gdjesmo #map {
+      width: 100%;
+      flex: 2;
+      margin-bottom: 20px; }
+    #gdjesmo .info {
+      width: 100%; }
+      #gdjesmo .info h2 {
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
