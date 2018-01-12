@@ -1,38 +1,170 @@
-/*
-Error: Invalid CSS after "...color : #F66D75": expected "{", was ";"
-        on line 2 of C:\Users\Adrian\Desktop\Cvjecarna Nada\CSS\style.scss
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Bellefair", serif;
+  font-size: 1.1em; }
 
-1: <<<<<<< HEAD
-2: $main-color : #F66D75;
-3: 
-4: html, body {
-5: 	padding: 0;
-6: 	margin: 0;
-7: 	font-family: "Bellefair", serif;
+#brand {
+  font-size: 2em; }
 
-Backtrace:
-C:\Users\Adrian\Desktop\Cvjecarna Nada\CSS\style.scss:2
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...color : #F66D75\": expected \"{\", was \";\"\A         on line 2 of C:\Users\Adrian\Desktop\Cvjecarna Nada\CSS\style.scss\A \A 1: <<<<<<< HEAD\A 2: $main-color : #F66D75;\A 3: \A 4: html, body {\A 5: 	padding: 0;\A 6: 	margin: 0;\A 7: 	font-family: \"Bellefair\", serif;"; }
+h1 {
+  margin: 25px 0;
+  text-align: center; }
+
+h2 {
+  color: #F66D75; }
+
+nav {
+  width: 100%;
+  padding-bottom: 0; }
+
+#navigation {
+  padding-top: 0;
+  padding-bottom: 25px;
+  justify-content: center; }
+  @media screen and (max-width: 480px) {
+    #navigation ul {
+      display: flex;
+      text-align: center; } }
+  #navigation ul li {
+    padding: 0 15px 15px 15px;
+    font-size: 1.3em; }
+    #navigation ul li a:hover {
+      color: #F66D75; }
+  @media screen and (max-width: 480px) {
+    #navigation {
+      justify-content: center; } }
+
+#center {
+  justify-content: center; }
+
+#navbarTogglerDemo01 {
+  justify-content: center; }
+  @media screen and (max-width: 480px) {
+    #navbarTogglerDemo01 {
+      justify-content: center; } }
+
+#banner-mobile {
+  display: none; }
+  @media screen and (max-width: 480px) {
+    #banner-mobile {
+      display: initial;
+      size: cover;
+      width: 100%; } }
+
+#banner {
+  width: 100%; }
+  @media screen and (max-width: 480px) {
+    #banner {
+      display: none; } }
+
+.filter-button {
+  border: 1px solid #F66D75;
+  border-radius: 5px;
+  text-align: center;
+  color: #F66D75;
+  margin-bottom: 30px;
+  background-color: #fff; }
+
+.filter-button:hover {
+  font-size: 18px;
+  border: 1px solid #F66D75;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #F66D75; }
+
+.btn-default:active .filter-button:active {
+  background-color: #F66D75;
+  color: white; }
+
+.port-image {
+  width: 100%; }
+
+.gallery_product {
+  margin-bottom: 30px; }
+
+#all {
+  width: 100%; }
+
+#map {
+  width: 70%;
+  height: 400px;
+  background-color: grey; }
+
+.ui.first.container {
+  display: flex; }
+  .ui.first.container .map {
+    flex: 1 1 60%; }
+  .ui.first.container #map {
+    height: 400px;
+    width: 100%; }
+  .ui.first.container .info {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 25px;
+    align-contents: center;
+    text-align: center; }
+    .ui.first.container .info h4 {
+      font-size: 1.3em;
+      padding: 5px; }
+
+hr {
+  margin: 0; }
+
+#galerija {
+  background-color: rgba(244, 174, 125, 0.7); }
+
+footer {
+  background-color: rgba(244, 174, 125, 0.7);
+  margin-top: 50px;
+  height: 50px;
+  display: flex; }
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+@media screen and (max-width: 480px) {
+  #gdjesmo {
+    display: flex;
+    flex-wrap: wrap; }
+    #gdjesmo #map {
+      width: 100%;
+      flex: 1; }
+    #gdjesmo .info {
+      width: 100%; }
+
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    margin-top: 25px; }
+    footer .container {
+      width: 100%;
+      text-align: center; }
+
+  .info {
+    margin-top: 25px; } }
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 150px;
+    text-align: center; }
+
+  #gdjesmo {
+    flex-wrap: wrap; }
+    #gdjesmo #map {
+      width: 100%;
+      flex: 2;
+      margin-bottom: 20px; }
+    #gdjesmo .info {
+      width: 100%; }
+      #gdjesmo .info h2 {
+        width: 100%; } }
+.btn:focus {
+  outline: none;
+  box-shadow: none; }
+
+/*# sourceMappingURL=style.css.map */
