@@ -1,6 +1,5 @@
 // GALERIJA
 $(document).ready(function(){
-
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
         
@@ -23,6 +22,8 @@ $(document).ready(function(){
 $(this).removeClass("active");
 }
 $(this).addClass("active");
+    document.getElementById("click").click();
+
 
 
 

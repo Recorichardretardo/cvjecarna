@@ -193,3 +193,29 @@ footer {
             margin-top: 25px;
         }
     }
+
+     @media screen and (max-width: 768px) {
+        .footer {
+            height: 150px;
+            text-align: center;
+        }
+        #gdjesmo {
+            flex-wrap: wrap;
+            #map {
+                width: 100%;
+                flex: 2;
+                margin-bottom: 20px;
+            }
+            .info {
+                width: 100%;
+                h2 {
+                    width: 100%;
+                }
+            }
+        }
+
+     }
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
